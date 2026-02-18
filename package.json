@@ -10,16 +10,19 @@
   "bin": {
     "weather": "./build/index.js"
   },
-  "files": ["build"],
+  "files": [
+    "build"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.18.0",
+    "node-fetch": "^3.3.2",
     "zod": "^3.25.76"
   },
   "devDependencies": {
-    "@types/node": "^24.4.0",
+    "@types/node": "^24.10.13",
     "typescript": "^5.9.2"
   }
 }
