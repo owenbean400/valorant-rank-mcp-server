@@ -1,0 +1,37 @@
+name: Node Build
+
+on:
+  push:
+    pull_request:
+      - main
+      - develop
+    branches:
+      - main
+      - develop
+
+jobs:
+  build:
+    name: Build MCP Valorant project
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v6
+
+      - name: Install Node.JS
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Install Node libraries
+        run: npm ci
+
+      - name: Build Project
+        run: npm run build
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: node-executable-index
+          path: build/index.js
+          retention-days: 7
+          compression-level: 0

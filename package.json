@@ -8,7 +8,7 @@
   },
   "type": "module",
   "bin": {
-    "weather": "./build/index.js"
+    "mcpvalorantindex": "./build/index.js"
   },
   "files": [
     "build"
