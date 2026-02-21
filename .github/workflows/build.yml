@@ -33,6 +33,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: node-executable-index
-          path: build/index.js
+          path: build
           retention-days: 7
           compression-level: 0
