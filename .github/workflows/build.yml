@@ -12,6 +12,7 @@ on:
 jobs:
   build:
     name: Build MCP Valorant project
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout source
