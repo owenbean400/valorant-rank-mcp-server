@@ -69,7 +69,7 @@ For more details, see:
   "mcpServers": {
     "BeanBaller Valorant Data": {
       "command": "node",
-      "args": ["build\\index.js"],
+      "args": ["build\\index.min.js"],
       "env": {
         "username": "BeanBaller",
         "api_base": "https://api.beanballer.com"

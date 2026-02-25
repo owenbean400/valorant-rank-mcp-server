@@ -2,13 +2,13 @@
   "name": "valorant-rank-mcp-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "build": "tsc && terser build/index.js -o build/index.min.js -c -m && rm build/index.js"
   },
   "type": "module",
   "bin": {
-    "mcpvalorantindex": "./build/index.js"
+    "mcpvalorantindex": "./build/index.min.js"
   },
   "files": [
     "build"
