@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc && terser build/index.js -o build/index.min.js -c -m && rm build/index.js"
   },
   "type": "module",
   "bin": {
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@types/node": "^24.10.13",
+    "terser": "^5.46.0",
     "typescript": "^5.9.2"
   }
 }

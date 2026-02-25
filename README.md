@@ -45,7 +45,7 @@ npm run build
 The compiled output will be generated at:
 
 ```
-build/index.js
+build/index.min.js
 ```
 
 ---
